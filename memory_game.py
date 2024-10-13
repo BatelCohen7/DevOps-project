@@ -1,6 +1,8 @@
 import random
 import time
 
+from utils import Screen_cleaner
+
 
 def generate_sequence(difficulty):
     return [random.randint(1, 101) for _ in range(difficulty)]
@@ -20,6 +22,7 @@ def play(difficulty):
     print("Remember this sequence:")
     print(sequence)
     time.sleep(0.7)  # Display the sequence for 0.7 seconds
+    Screen_cleaner()
     user_list = get_list_from_user(difficulty)
     if is_list_equal(sequence, user_list):
         print("Correct sequence!")
