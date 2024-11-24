@@ -1,6 +1,5 @@
-# Import necessary library
 import random
-
+from score import add_score
 
 def generate_number(difficulty):
     return random.randint(0, difficulty)
@@ -22,6 +21,7 @@ def play(difficulty):
     # Compare results and return the outcome
     if compare_results(secret_number, guess):
         print("Congratulations! You guessed correctly.")
+        add_score(difficulty)
         return True
     else:
         print(f"Sorry, the correct number was {secret_number}. Better luck next time!")

@@ -1,6 +1,7 @@
 import random
 import time
 
+from score import add_score
 from utils import Screen_cleaner
 
 
@@ -26,6 +27,7 @@ def play(difficulty):
     user_list = get_list_from_user(difficulty)
     if is_list_equal(sequence, user_list):
         print("Correct sequence!")
+        add_score(difficulty)
         return True
     else:
         print("Wrong sequence!")
