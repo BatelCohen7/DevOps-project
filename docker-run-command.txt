@@ -1,0 +1,2 @@
+docker build -t world-of-games .
+docker run -d -p 8777:8777 --name world-of-games world-of-games
