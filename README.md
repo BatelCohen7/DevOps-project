@@ -22,27 +22,27 @@ The application is deployed using Docker and managed with Jenkins pipelines for 
 ## Setup Instructions
 
 ### Local Setup
-1. Clone the repository:
+**1. Clone the repository:**
   ```bash
     git clone https://github.com/your-username/world-of-games.git
     cd world-of-games
  ```
-2. Install dependencies:
+**2. Install dependencies:**
  ```bash
  pip install -r requirements.txt
  ```
-3. Run the application:
-```bash
- python app.py
- 	```
+**3. Run the application:**
+ ```bash
+python app.py
+```
 
 ### Docker Setup
-1. Build the Docker image:
+**1. Build the Docker image:**
   ```bash
   docker build -t world-of-games .
   ```
-2. Run the container:
-  ```bash
+**2. Run the container:**
+```bash
  docker run -d -p 8777:8777 --name world-of-games world-of-games
   ```
 Access the application at http://localhost:8777.
@@ -87,3 +87,5 @@ world-of-games/
 
 ## Author
 Created by [Batel Yerushalmi](http://https://www.linkedin.com/in/batel-yerushalmi/ "Batel Yerushalmi") Feedback is welcome!
+
+
